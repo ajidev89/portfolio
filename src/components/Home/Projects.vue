@@ -34,7 +34,7 @@
                 <h1 class="text-7xl !leading-[130.56px] font-extrabold font-noto">  
                     Projects  💼
                 </h1>
-                <div class="my-4">
+                <div class="my-4 text-xl leading-10">
                     Here are a few projects I have worked on.
                 </div>
             </div>
