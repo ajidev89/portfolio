@@ -14,7 +14,7 @@
 </script>
 
 <template>
-  <div :class="{ 'bg-dark-mode text-white': this.store.lightMode }" class="font-eudoxus">
+  <div :class="{ 'bg-dark-mode text-white': this.store.lightMode }" class="font-eudoxus transition-all ease-in-out duration-500">
     <Header/>
     <RouterView />
     {{ this.store.lightMode  }}

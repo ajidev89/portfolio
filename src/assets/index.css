@@ -15,7 +15,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 4px; 
+    border-radius: 6px; 
     padding: 2px; 
     background: linear-gradient(90deg, #4362BE 0%, #9747FF 100%); 
     transition-property: background;
