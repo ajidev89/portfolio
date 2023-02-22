@@ -1,4 +1,51 @@
 @import "fonts/eudoxus_sans/index.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-brand{
+    background: linear-gradient(90deg, #4362BE 0%, #9747FF 100%);
+}
+
+.btn-border{
+    position: relative;
+}
+.btn-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 4px; 
+    padding: 2px; 
+    background: linear-gradient(90deg, #4362BE 0%, #9747FF 100%); 
+    transition-property: background;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 1s;
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+}
+.btn-border:hover {
+    background: linear-gradient(90deg, #4362BE 0%, #9747FF 100%) !important; 
+}
+
+.btn-brand{
+    background: linear-gradient(90deg, #4362BE 0%, #9747FF 100%); 
+}
+
+.btn-border-gradient{
+ @apply btn-border rounded-md px-8 py-3 text-white text-sm font-semibold
+}
+.btn-gradient{
+    @apply btn-brand rounded-md px-8 py-3 text-white text-sm font-semibold;
+}
+
+.text-gradient{
+    background: linear-gradient(102deg, #AAABB7 4.18%, #4362BE 76.01%),
+linear-gradient(0deg, #FCF7F8, #FCF7F8);
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}

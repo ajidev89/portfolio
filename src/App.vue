@@ -1,17 +1,23 @@
-<script setup>
+<script>
   import { RouterLink, RouterView } from 'vue-router'
   import Header from './components/Header.vue';
 
-  components:{ 
-    Header 
+  export default{
+    name:"App",
+    components:{ 
+      Header 
+    }
   }
+
+
 
 </script>
 
 <template>
-  <div class="font-eudoxus">
+  <div :class="{ 'bg-dark-mode text-white': this.store.lightMode }" class="font-eudoxus">
     <Header/>
     <RouterView />
+    {{ this.store.lightMode  }}
   </div>
 
 </template>

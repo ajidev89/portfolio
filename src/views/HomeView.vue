@@ -6,7 +6,7 @@ import Footer from '../components/Footer.vue';
 </script>
 
 <template>
-<section class="flex flex-col gap-24">
+<section class="flex flex-col gap-32">
   <HeroSection/>
   <Experience/>
   <Projects/>

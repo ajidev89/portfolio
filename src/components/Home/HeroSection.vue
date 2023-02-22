@@ -5,21 +5,32 @@
 </script>
 
 <template>
-    <section class="grid grid-cols-2 h-screen">
-        <div class="h-screen bg-black/70 text-gray-100 " >
-        </div>
-        <div class="h-screen flex items-center p-8" >
-          <div>
-            <div class="font-semibold">
-                <div class="text-4xl mt-2 leading[70px] ">
-                  Hey there, I'm Ajidagba a fullstack developer
-                </div>
+  <section>
+    <section class="px-28 relative mt-8">
+      <h1 class="text-8xl !leading-[130.56px] font-extrabold font-noto">  
+        Building <span class="text-gradient">secure <br>
+        web-apps</span> is my <br> life’s work.
+      </h1>
+      <div>
+        Have an idea you’d want to discuss  with me?
+      </div>
+      <button class="btn-brand rounded-md px-8 py-3 text-white text-sm font-semibold my-6 uppercase">
+        Tell me about it
+      </button>
+      <div class="absolute top-72 left-0 flex justify-end px-28 -z-0 w-full">
+        <img src="@/assets/fade.svg"  class="h-[600px] w-auto"/>
+      </div>
+    </section>
+    <section class="px-28 mt-16 relative grid grid-cols-3">
+        <div class="col-span-2">
+            <h1 class="text-7xl !leading-[130.56px] font-extrabold font-noto">  
+                Hello There 👋,
+            </h1>
+            <div>
+                I'm Ajidagba Ayobami. I am a full-stack web developer, driven to develop useful solutions while tackling the problem of online security.
             </div>
-            <div class="my-5">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ratione voluptatum omnis ducimus voluptate odit esse,
-            </div>
-            <button class="bg-black rounded text-gray-100 py-3 px-8">Hire me</button>
-          </div>
         </div>
-      </section>
+    </section>
+  </section>
+    
 </template>

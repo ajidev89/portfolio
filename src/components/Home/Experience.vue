@@ -1,50 +1,41 @@
 <script>
     export default{
         name:"HeroSection",
+        data(){
+            return{
+                expertise:[
+                    'Git','Node js','Npm','Composer','PHP','Laravel','NGINX','Vue3'
+                ]
+            }
+        }
     }
 </script>
 
 <template>
-    <section>
-        <div class="text-4xl mt-2 text-center font-semibold leading[70px]">
-            My experience in my 3 years tech journey
-        </div>
-        <div class="text-center my-4 mx-auto lg:w-3/5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam pariatur deserunt, minima dolorem nihil maiores modi eligendi ut fugiat atque. Excepturi ducimus quaerat perferendis quod eaque deleniti officia minima tenetur?
-        </div>
-        <div class="mt-8 mx-auto lg:w-3/5 flex gap-3 flex-wrap justify-center">
-            <div>
-                <div class="h-36 w-36 bg-gray-100 rounded-full"></div>
-                <div class="my-2 text-center">Laravel</div>
-            </div>
-            <div>
-                <div class="h-36 w-36 bg-gray-100 rounded-full"></div>
-                <div class="my-2 text-center">Git</div>
-            </div>
-            <div>
-                <div class="h-36 w-36 bg-gray-100 rounded-full"></div>
-                <div class="my-2 text-center">PHP</div>
-            </div>
-            <div>
-                <div class="h-36 w-36 bg-gray-100 rounded-full"></div>
-                <div class="my-2 text-center">Composer</div>
-            </div>
-            <div>
-                <div class="h-36 w-36 bg-gray-100 rounded-full"></div>
-                <div class="my-2 text-center">Node js</div>
-            </div>
-            <div>
-                <div class="h-36 w-36 bg-gray-100 rounded-full"></div>
-                <div class="my-2 text-center">Npm</div>
-            </div>
-            <div>
-                <div class="h-36 w-36 bg-gray-100 rounded-full"></div>
-                <div class="my-2 text-center">NGINX</div>
-            </div>
-            <div>
-                <div class="h-36 w-36 bg-gray-100 rounded-full"></div>
-                <div class="my-2 text-center">Vue3</div>
+    <section class="px-28 relative">
+        <div class="grid grid-cols-3">
+            <div class="col-span-2">
+                <h1 class="text-7xl !leading-[130.56px] font-extrabold font-noto">  
+                    Expertise ⚙
+                </h1>
+                <div class="my-4">
+                    Software development, frontend and flutter developer.
+                </div>
             </div>
         </div>
+        <div class="flex justify-center my-14">
+            <div class="flex flex-wrap justify-center gap-4 w-[40%]">
+                <div v-for="expert in expertise" :key="expert" class="px-4 py-2 rounded  expert-btn">{{ expert }}</div>
+            </div>
+        </div>
+        
+
     </section>
 </template>
+
+<style>
+.expert-btn{
+    background: linear-gradient(90deg, rgba(128, 160, 255, 0.2) 0%, rgba(151, 71, 255, 0.2) 100%);
+}
+
+</style>
