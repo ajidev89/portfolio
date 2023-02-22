@@ -26,7 +26,7 @@
             <h1 class="text-7xl !leading-[130.56px] font-extrabold font-noto">  
                 Hello There 👋,
             </h1>
-            <div>
+            <div class="text-xl leading-10">
                 I'm Ajidagba Ayobami. I am a full-stack web developer, driven to develop useful solutions while tackling the problem of online security.
             </div>
         </div>

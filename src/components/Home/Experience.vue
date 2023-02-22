@@ -18,8 +18,8 @@
                 <h1 class="text-7xl !leading-[130.56px] font-extrabold font-noto">  
                     Expertise ⚙
                 </h1>
-                <div class="my-4">
-                    Software development, frontend and flutter developer.
+                <div class="my-4 text-xl leading-10">
+                    Software development, frontend and backend developer.
                 </div>
             </div>
         </div>
@@ -28,8 +28,6 @@
                 <div v-for="expert in expertise" :key="expert" class="px-4 py-2 rounded  expert-btn">{{ expert }}</div>
             </div>
         </div>
-        
-
     </section>
 </template>
 

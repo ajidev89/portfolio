@@ -13,7 +13,6 @@
                 this.background = (scroll > 10) ? true : false
             },
             async togglePublish($event,published,id){
-                console.log("hey");
                 let toogle = document.querySelector(`#toggleBtn`);
                 let span = document.querySelector(`#toggleBtn`).nextSibling;
                 this.store.toogleMode();
@@ -26,9 +25,6 @@
                 }
             }
         },
-        created () {
-            window.addEventListener('scroll', this.handleScroll);
-        }
     }
 </script>
 
