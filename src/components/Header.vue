@@ -51,10 +51,7 @@
                         <div><img src="@/assets/moon.svg" /></div>
                         <div><img src="@/assets/sun.svg" /></div>
                     </div>
-                    <div :class="this.store.lightMode ? 'translate-x-0' : 'translate-x-[52px]'" class="h-7 w-7 flex absolute bg-white justify-center items-center rounded-full transition duration-500 transform">
-                        <div class="h-6 w-6 border-[#9747FF] border-r-2 rounded-r-xl">
-                        </div>
-                    </div>
+                    <div :class="this.store.lightMode ? 'translate-x-0' : 'translate-x-[52px]'" class="h-7 w-7 flex absolute bg-white justify-center items-center rounded-full transition duration-500 transform"></div>
                 </button>
             </div>
         </div>
