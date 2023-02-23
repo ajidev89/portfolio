@@ -5,7 +5,7 @@
             return{
                 background:false,
                 lightMode:true,
-                showMobileMenu:true
+                showMobileMenu:false
             }
         },
         methods:{
