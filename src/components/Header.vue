@@ -4,7 +4,8 @@
         data(){
             return{
                 background:false,
-                lightMode:true
+                lightMode:true,
+                showMobileMenu:true
             }
         },
         methods:{
@@ -12,7 +13,7 @@
                 let scroll = window.scrollY;
                 this.background = (scroll > 10) ? true : false
             },
-            async togglePublish($event,published,id){
+            togglePublish($event,published,id){
                 let toogle = document.querySelector(`#toggleBtn`);
                 let span = document.querySelector(`#toggleBtn`).nextSibling;
                 this.store.toogleMode();
@@ -23,13 +24,17 @@
                     //publish
                     toogle.lastElementChild.classList.add('translate-x-[52px]')
                 }
+            },
+            toogleNav(){
+                this.showMobileMenu = !this.showMobileMenu
             }
+
         },
     }
 </script>
 
 <template>
-    <header class="header-bg px-8 py-4 grid grid-cols-3 lg:grid-cols-3 lg:place-items-center">
+    <header class="header-bg sticky top-0 z-10 px-8 py-4 grid grid-cols-3 lg:grid-cols-3 lg:place-items-center">
         <div class="col-span-2 lg:col-span-1 flex items-center gap-4">
             <div class="text-3xl lg:text-5xl font-extrabold font-noto">AD.</div> 
             <div class="uppercase text-xs lg:text-sm">Ajidagba Ayobami</div>
@@ -52,10 +57,13 @@
             </div>
         </div>
         <div class="lg:hidden flex justify-end">
-            <img v-if=" this.store.lightMode" src="@/assets/menu.svg" />
-            <img v-else src="@/assets/menu-black.svg" />
+            <img @click="toogleNav" v-if="this.store.lightMode" src="@/assets/menu.svg" />
+            <img @click="toogleNav" v-else src="@/assets/menu-black.svg" />
         </div>
     </header>
+    <div v-if="showMobileMenu" class="fixed z-10 top-20 bottom-20 bg-black">
+       
+    </div>
 </template>
 
 <style>
