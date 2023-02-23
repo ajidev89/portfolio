@@ -12,10 +12,10 @@
 </script>
 
 <template>
-    <section class="px-28 relative">
-        <div class="grid grid-cols-3">
-            <div class="col-span-2">
-                <h1 class="text-6xl !leading-[130.56px] font-extrabold font-noto">  
+    <section class="lg:px-28 px-8 relative">
+        <div class="grid lg:grid-cols-3">
+            <div class="lg:col-span-2">
+                <h1 class="lg:text-6xl lg:leading-[130.56px] text-4xl leading-[36px]  font-extrabold font-noto">  
                     Let's create magic 🧝‍♂️
                 </h1>
                 <div class="my-4 text-xl leading-10">
@@ -23,16 +23,16 @@
                 </div>
             </div>
         </div>
-        <div class="absolute top-72 left-0 flex justify-end px28 -z-0 w-full">
-            <img src="@/assets/contact-face.png"  class="h-[500px] w-auto"/>
+        <div class="lg:absolute lg:top-72 lg:left-0 flex justify-center lg:justify-end lg:px-28 -z-0 w-full">
+            <img src="@/assets/contact-face.png"  class="lg:h-[500px] w-auto"/>
           </div>
     </section>
-    <section class="px-28 my-16 relative grid grid-cols-3">
-        <div class="col-span-2">
-            <h1 class="text-7xl !leading-[130.56px] font-extrabold font-noto">  
+    <section class="lg:px-28 px-8 my-16 relative grid lg:grid-cols-3">
+        <div class="lg:col-span-2">
+            <h1 class="lg:text-7xl lg:leading-[130.56px] text-4xl leading-[36px] font-extrabold font-noto">  
                 Let's connect 🔗
             </h1>
-            <div class="text-xl leading-10">
+            <div class="my-8 lg:my-0 text-xl leading-10">
                 I am always interested to talk about everything web development,
                 and Tech.
             </div>

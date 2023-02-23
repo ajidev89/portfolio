@@ -29,12 +29,12 @@
 </script>
 
 <template>
-    <header class="header-bg px-8 py-4 grid grid-cols-3 place-items-center">
-        <div class="flex items-center gap-4">
-            <div class="text-5xl font-extrabold font-noto">AD.</div> 
-            <div class="uppercase text-sm">Ajidagba Ayobami</div>
+    <header class="header-bg px-8 py-4 grid grid-cols-3 lg:grid-cols-3 lg:place-items-center">
+        <div class="col-span-2 lg:col-span-1 flex items-center gap-4">
+            <div class="text-3xl lg:text-5xl font-extrabold font-noto">AD.</div> 
+            <div class="uppercase text-xs lg:text-sm">Ajidagba Ayobami</div>
         </div>
-        <div class="col-span-2 flex items-center gap-14">
+        <div class="col-span-2 hidden lg:flex items-center gap-14">
             <ul class="flex gap-12">
                 <li>Home</li>
                 <li>Experise</li>
@@ -50,6 +50,10 @@
                     <div :class="this.store.lightMode ? 'translate-x-0' : 'translate-x-[52px]'" class="h-7 w-7 flex absolute bg-white justify-center items-center rounded-full transition duration-500 transform"></div>
                 </button>
             </div>
+        </div>
+        <div class="lg:hidden flex justify-end">
+            <img v-if=" this.store.lightMode" src="@/assets/menu.svg" />
+            <img v-else src="@/assets/menu-black.svg" />
         </div>
     </header>
 </template>

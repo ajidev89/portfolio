@@ -10,12 +10,12 @@
 </script>
 
 <template>
-<footer class="header-bg px-28 py-4 grid grid-cols-2">
-    <div class="flex items-center gap-4">
-        <div class="text-5xl font-extrabold font-noto">AD.</div> 
-        <div class="uppercase text-sm">Ajidagba Ayobami</div>
+<footer class="header-bg lg:px-28 px-8 py-4 grid grid-cols-3">
+    <div class="col-span-2 flex items-center gap-4">
+        <div class="lg:text-5xl text-3xl font-extrabold font-noto">AD.</div> 
+        <div class="uppercase text-xs lg:text-sm">Ajidagba Ayobami</div>
     </div>
-    <div class="flex items-center justify-end gap-14">
+    <div class="flex items-center text-xs lg:text-sm justify-end gap-14">
         Copyright {{ year }}
     </div>
 </footer>
