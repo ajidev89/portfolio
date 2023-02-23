@@ -19,61 +19,65 @@
         Copyright {{ year }}
     </div>
 </footer>
-<div v-if="this.store.lightMode" class="fixed lg:hidden footer-icon bottom-0 w-full border-t border-b p-2">
-    <div class="grid grid-cols-5 place-items-center my-4">
-        <div>
-            <a href="https://twitter.com/harji87" target="_blank">
-                <img src="@/assets/twitter-white.svg" class="h-7 w-7" />
-            </a>
-        </div>
-        <div>
-            <a href="https://instagram.com/ajidev_" target="_blank">
-                <img src="@/assets/instagram-white.svg" class="h-7 w-7"  />
-            </a>
-        </div>
-        <div>
-            <a href="https://web.facebook.com/ajidagba.ayobami" target="_blank">
-                <img src="@/assets/facebook-white.svg" class="h-7 w-7" />
-            </a>
-        </div>
-        <div>
-            <a href="https://github.com/ajidev89" target="_blank">
-                <img src="@/assets/github-white.svg" class="h-7 w-7"  />
-            </a>
-        </div>
-        <div>
-            <a href="https://github.com/ajidev89" target="_blank">
-                <img src="@/assets/linkedIn-white.svg" class="h-7 w-7"  />
-            </a>
+<div v-if="this.store.lightMode" class="fixed bg-dark-mode lg:hidden  bottom-0 w-full border-t border-b">
+    <div class="footer-icon lg:hidden w-full  p-2">
+        <div class="grid grid-cols-5 place-items-center my-4">
+            <div>
+                <a href="https://twitter.com/harji87" target="_blank">
+                    <img src="@/assets/twitter-white.svg" class="h-7 w-7" />
+                </a>
+            </div>
+            <div>
+                <a href="https://instagram.com/ajidev_" target="_blank">
+                    <img src="@/assets/instagram-white.svg" class="h-7 w-7"  />
+                </a>
+            </div>
+            <div>
+                <a href="https://web.facebook.com/ajidagba.ayobami" target="_blank">
+                    <img src="@/assets/facebook-white.svg" class="h-7 w-7" />
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/ajidev89" target="_blank">
+                    <img src="@/assets/github-white.svg" class="h-7 w-7"  />
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/ajidev89" target="_blank">
+                    <img src="@/assets/linkedIn-white.svg" class="h-7 w-7"  />
+                </a>
+            </div>
         </div>
     </div>
 </div>
-<div v-if="!this.store.lightMode" class="fixed lg:hidden footer-icon-white bottom-0 w-full border-t border-b p-2">
-    <div class="grid grid-cols-5 place-items-center my-4">
-        <div>
-            <a href="https://twitter.com/harji87" target="_blank">
-                <img src="@/assets/twitter-black.svg" class="h-7 w-7" />
-            </a>
-        </div>
-        <div>
-            <a href="https://instagram.com/ajidev_" target="_blank">
-                <img src="@/assets/instagram-black.svg" class="h-7 w-7" />
-            </a>
-        </div>
-        <div>
-            <a href="https://web.facebook.com/ajidagba.ayobami" target="_blank">
-                <img src="@/assets/facebook-black.svg" class="h-7 w-7" />
-            </a>
-        </div>
-        <div>
-            <a href="https://github.com/ajidev89" target="_blank">
-                <img src="@/assets/github-black.svg" class="h-7 w-7" />
-            </a>
-        </div>
-        <div>
-            <a href="https://github.com/ajidev89" target="_blank">
-                <img src="@/assets/linkedIn.svg" class="h-7 w-7" />
-            </a>
+<div v-if="!this.store.lightMode" class="fixed w-full bottom-0 border-t border-b bg-white">
+    <div class="footer-icon-white lg:hidden w-full  p-2">
+        <div class="grid grid-cols-5 place-items-center my-4">
+            <div>
+                <a href="https://twitter.com/harji87" target="_blank">
+                    <img src="@/assets/twitter-black.svg" class="h-7 w-7" />
+                </a>
+            </div>
+            <div>
+                <a href="https://instagram.com/ajidev_" target="_blank">
+                    <img src="@/assets/instagram-black.svg" class="h-7 w-7" />
+                </a>
+            </div>
+            <div>
+                <a href="https://web.facebook.com/ajidagba.ayobami" target="_blank">
+                    <img src="@/assets/facebook-black.svg" class="h-7 w-7" />
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/ajidev89" target="_blank">
+                    <img src="@/assets/github-black.svg" class="h-7 w-7" />
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/ajidev89" target="_blank">
+                    <img src="@/assets/linkedIn.svg" class="h-7 w-7" />
+                </a>
+            </div>
         </div>
     </div>
 </div>
