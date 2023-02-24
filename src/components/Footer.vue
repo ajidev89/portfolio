@@ -33,7 +33,7 @@
         Copyright {{ year }}
     </div>
 </footer>
-<div v-if="!hideFooterIcons && this.store.lightMode" class="fixed bg-dark-mode lg:hidden  bottom-0 w-full border-t border-b">
+<div v-show="!hideFooterIcons && this.store.lightMode" class="fixed bg-dark-mode lg:hidden  bottom-0 w-full border-t border-b">
     <div class="footer-icon lg:hidden w-full  p-2">
         <div class="grid grid-cols-5 place-items-center my-4">
             <div>
@@ -64,7 +64,7 @@
         </div>
     </div>
 </div>
-<div v-if="!hideFooterIcons && !this.store.lightMode" class="fixed w-full bottom-0 border-t border-b bg-white">
+<div v-show="!hideFooterIcons && !this.store.lightMode" class="fixed w-full bottom-0 border-t border-b bg-white">
     <div class="footer-icon-white lg:hidden w-full  p-2">
         <div class="grid grid-cols-5 place-items-center my-4">
             <div>

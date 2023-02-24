@@ -36,7 +36,7 @@
                 I am always interested to talk about everything web development,
                 and Tech.
             </div>
-            <div v-if="!this.store.lightMode" id="social_icon" class="flex items-center gap-8 my-4">
+            <div v-show="!this.store.lightMode" id="social_icon" class="flex items-center gap-8 my-4">
                 <div>
                     <a href="https://twitter.com/harji87" target="_blank">
                         <img src="@/assets/twitter-black.svg" />
@@ -63,7 +63,7 @@
                     </a>
                 </div>
             </div>
-            <div v-if="this.store.lightMode" id="social_icon" class="flex items-center gap-8 my-4">
+            <div v-show="this.store.lightMode" id="social_icon" class="flex items-center gap-8 my-4">
                 <div>
                     <a href="https://twitter.com/harji87" target="_blank">
                         <img src="@/assets/twitter-white.svg" />

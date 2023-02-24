@@ -57,18 +57,18 @@
                     </button>
                 </div>
             </div>
-            <div v-if="!showMobileMenu" class="lg:hidden flex justify-end">
-                <img @click="toogleNav" v-if="this.store.lightMode" src="@/assets/menu.svg" />
+            <div v-show="!showMobileMenu" class="lg:hidden flex justify-end">
+                <img @click="toogleNav" v-show="this.store.lightMode" src="@/assets/menu.svg" />
                 <img @click="toogleNav" v-else src="@/assets/menu-black.svg" />
             </div>
             <div v-else class="lg:hidden flex justify-end">
-                <img @click="toogleNav" v-if="this.store.lightMode" src="@/assets/cancel-white.svg" />
+                <img @click="toogleNav" v-show="this.store.lightMode" src="@/assets/cancel-white.svg" />
                 <img @click="toogleNav" v-else src="@/assets/cancel-black.svg" />
             </div>
         </header>
     </section>
 
-    <div v-if="showMobileMenu" :class="{ 'bg-white/20': !this.store.lightMode,'bg-dark-mode/20': this.store.lightMode }" class="fixed z-10 backdrop-blur w-full h-[84vh]">
+    <div v-show="showMobileMenu" :class="{ 'bg-white/20': !this.store.lightMode,'bg-dark-mode/20': this.store.lightMode }" class="fixed z-10 backdrop-blur w-full h-[84vh]">
        <div class="flex justify-center mb-8">
             <ul class="flex flex-col text-2xl gap-14 px-8 my-16">
                 <li>Home</li>
