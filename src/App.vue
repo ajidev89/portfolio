@@ -6,7 +6,7 @@
     name:"App",
     components:{ 
       Header 
-    }
+    },
   }
 
 
@@ -15,7 +15,7 @@
 
 <template>
   
-  <div :class="{ 'bg-dark-mode text-white': this.store.lightMode }" class="font-eudoxus transition-all ease-in-out duration-500">
+  <div :class="{ 'bg-dark-mode text-white': this.store.lightMode, 'bg-white text-black': !this.store.lightMode }" class="font-eudoxus transition-all ease-in-out duration-500">
     <Header/>
     <RouterView />
   </div>

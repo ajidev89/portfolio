@@ -6,18 +6,25 @@ const useStore = defineStore('main', {
 
     state: () => {
         return {
-            lightMode:true,
+            lightMode: (localStorage.hasOwnProperty("mode_session")) ? JSON.parse(localStorage.getItem("mode_session")) : false,
         }
     },
     getters: {
         getMode(){
+            let mode  = localStorage.getItem("mode_session");
+            if(mode){
+                console.log("Hey");
+                return mode
+            }
+            console.log("Hey");
             return this.lightMode;
         }
     },
     actions: {
         //use this to access the whole instance
         toogleMode(){
-            return this.lightMode = !this.lightMode;
+            this.lightMode = !this.lightMode;
+            localStorage.setItem('mode_session', this.lightMode); 
         }
     },
 })

@@ -27,7 +27,7 @@
             <img src="@/assets/contact-face.png"  class="lg:h-[500px] w-auto"/>
           </div>
     </section>
-    <section class="lg:px-28 px-8 my-16 relative grid lg:grid-cols-3">
+    <section  class="lg:px-28 px-8 my-16 relative grid lg:grid-cols-3">
         <div class="lg:col-span-2">
             <h1 class="lg:text-7xl lg:leading-[130.56px] text-4xl leading-[36px] font-extrabold font-noto">  
                 Let's connect 🔗
@@ -36,7 +36,7 @@
                 I am always interested to talk about everything web development,
                 and Tech.
             </div>
-            <div v-if="!this.store.lightMode" class="flex items-center gap-8 my-4">
+            <div v-if="!this.store.lightMode" id="social_icon" class="flex items-center gap-8 my-4">
                 <div>
                     <a href="https://twitter.com/harji87" target="_blank">
                         <img src="@/assets/twitter-black.svg" />
@@ -63,7 +63,7 @@
                     </a>
                 </div>
             </div>
-            <div v-if="this.store.lightMode" class="flex items-center gap-8 my-4">
+            <div v-if="this.store.lightMode" id="social_icon" class="flex items-center gap-8 my-4">
                 <div>
                     <a href="https://twitter.com/harji87" target="_blank">
                         <img src="@/assets/twitter-white.svg" />

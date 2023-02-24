@@ -3,9 +3,23 @@
         name:"Footer",
         data(){
             return{
-                year: new Date().getFullYear()
+                year: new Date().getFullYear(),
+                hideFooterIcons: false
             }
-        }
+        },
+        methods:{
+            hideFooterBar(){
+                let scroll = document.documentElement.scrollTop + 800;
+                let socialIcons =  document.querySelector("#social_icon");
+                if(scroll > socialIcons.getBoundingClientRect().top + window.scrollY){
+                    return this.hideFooterIcons = true
+                }
+                return this.hideFooterIcons = false
+            }
+        },
+        created(){
+            window.addEventListener('scroll', this.hideFooterBar);     
+        },
     }
 </script>
 
@@ -19,7 +33,7 @@
         Copyright {{ year }}
     </div>
 </footer>
-<div v-if="this.store.lightMode" class="fixed bg-dark-mode lg:hidden  bottom-0 w-full border-t border-b">
+<div v-if="!hideFooterIcons && this.store.lightMode" class="fixed bg-dark-mode lg:hidden  bottom-0 w-full border-t border-b">
     <div class="footer-icon lg:hidden w-full  p-2">
         <div class="grid grid-cols-5 place-items-center my-4">
             <div>
@@ -50,7 +64,7 @@
         </div>
     </div>
 </div>
-<div v-if="!this.store.lightMode" class="fixed w-full bottom-0 border-t border-b bg-white">
+<div v-if="!hideFooterIcons && !this.store.lightMode" class="fixed w-full bottom-0 border-t border-b bg-white">
     <div class="footer-icon-white lg:hidden w-full  p-2">
         <div class="grid grid-cols-5 place-items-center my-4">
             <div>
