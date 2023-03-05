@@ -5,14 +5,14 @@
 </script>
 
 <template>
-  <section>
+  <section id="home">
     <section class="lg:px-28 px-8 relative mt-8">
       <h1 class="lg:text-8xl text-5xl leading-[65.28px] lg:leading-[130.56px] font-extrabold font-noto">  
         Building <span class="text-gradient">secure <br>
-        web-apps</span> is my <br> life’s work.
+        web-apps</span> is my <br> life's work.
       </h1>
       <div class="my-6 lg:my-0">
-        Have an idea you’d want to discuss  with me?
+        Have an idea you'd want to discuss  with me?
       </div>
       <button class="btn-brand rounded-md px-8 py-3 text-white text-sm font-semibold my-6 uppercase">
         Tell me about it

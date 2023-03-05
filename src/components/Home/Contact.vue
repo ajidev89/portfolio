@@ -19,7 +19,7 @@
                     Let's create magic 🧝‍♂️
                 </h1>
                 <div class="my-4 text-xl leading-10">
-                    Thank you for your time. I am open to collaborating with a team oftalented developers and designers. Give me a call  ,  or drop me an email at ajidagba21@gmail.com, if you think we could work well together. Working with exceptional humans is always  an honor. 
+                    Thank you for your time. I am open to collaborating with a team of talented developers and designers. Give me a call <a href="tel:+2347084773667">+2347084773667</a>,  or drop me an email at <a href="mailto:ajidagba21@gmail.com">ajidagba21@gmail.com</a>, if you think we could work well together. Working with exceptional humans is always  an honor. 
                 </div>
             </div>
         </div>

@@ -28,7 +28,7 @@
     }
 </script>
 <template>
-    <section class="lg:px-28 relative">
+    <section id="project" class="lg:px-28 relative">
         <div class="grid px-8 lg:px-0 lg:grid-cols-3">
             <div class="lg:col-span-2">
                 <h1 class="lg:text-7xl lg:leading-[130.56px] text-4xl leading-[36px] font-extrabold font-noto">  

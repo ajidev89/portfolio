@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <section class="lg:px-28 px-8 relative">
+    <section id="expertise" class="lg:px-28 px-8 relative">
         <div class="grid lg:grid-cols-3">
             <div class="lg:col-span-2">
                 <h1 class="lg:text-7xl lg:leading-[130.56px] text-4xl leading-[36px] font-extrabold font-noto">  

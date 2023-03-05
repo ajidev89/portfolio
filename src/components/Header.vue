@@ -27,9 +27,18 @@
             },
             toogleNav(){
                 this.showMobileMenu = !this.showMobileMenu
-            }
+            },
+            scrollToView(el,offset){
+                const myEl = document.getElementById(el)
+                this.$smoothScroll({
+                    scrollTo: myEl,
+                    duration: 1000,
+                    offset: offset,
+                });
 
-        },
+                this.toogleNav();
+            }
+        },  
     }
 </script>
 
@@ -42,11 +51,23 @@
             </div>
             <div class="col-span-2 hidden lg:flex items-center gap-14">
                 <ul class="flex gap-12">
-                    <li>Home</li>
-                    <li>Experise</li>
-                    <li>Project</li>
+                    <li>
+                        <a href="#home" v-smooth-scroll="{ duration: 1000, offset: -62 }"> 
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#expertise" v-smooth-scroll="{ duration: 1000, offset: -100 }"> 
+                            Expertise
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#project" v-smooth-scroll="{ duration: 1000, offset: -100 }"> 
+                            Projects
+                        </a>
+                    </li>
                 </ul>
-                <button :class="{ 'btn-border-gradient': this.store.lightMode, 'btn-gradient': !this.store.lightMode }" >Give me a call</button>
+                <a href="tel:+2347084773667" :class="{ 'btn-border-gradient': this.store.lightMode, 'btn-gradient': !this.store.lightMode }" >Give me a call</a>
                 <div>
                     <button @click="togglePublish($event)" id="toggleBtn" class="bg-brand relative h-10 w-24 flex items-center px-2 rounded-full">
                         <div class="flex items-center  flex-grow justify-between">
@@ -71,10 +92,26 @@
     <div v-show="showMobileMenu" :class="{ 'bg-white/20': !this.store.lightMode,'bg-dark-mode/20': this.store.lightMode }" class="fixed z-10 backdrop-blur w-full h-screen">
        <div class="flex justify-center mb-8">
             <ul class="flex flex-col text-2xl gap-14 px-8 my-16">
-                <li>Home</li>
-                <li>Expertise</li>
-                <li>Projects</li>
-                <li>Speak with me</li>
+                <li>
+                    <a href="#home" @click="scrollToView('home', -62)"> 
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#expertise" @click="scrollToView('expertise',-100)"> 
+                        Expertise
+                    </a>
+                </li>
+                <li>
+                    <a href="#project" @click="scrollToView('project',-100)"> 
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+2347084773667">
+                        Speak with me
+                    </a>
+                </li>
             </ul>
        </div>
        <div class="flex justify-center">
